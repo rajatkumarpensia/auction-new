@@ -1,0 +1,350 @@
+body{
+	font-family: 'ITC Avant Garde Gothic Std Book';
+	background-color: #fff;
+}
+.header-wrap{
+	background-image: linear-gradient(rgba(0,0,0,0.8) 30%,rgba(0,0,0,0));
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	width:100%;
+	padding-bottom:8rem;
+	z-index: 999;
+}
+.menu-toggle{
+	display: none;
+}
+.theme-text-color{
+	color:#f0a331;
+}
+.theme-bg-color{
+	background-color: #f0a331;
+}
+.black-bg-color{
+	background-color: #000;
+}
+.black-text-color{
+	color: #000;
+}
+.gray-text-color{
+	color:#595959;
+}
+.white-text-color{
+	color:#fff;
+}
+.list-style-none{
+	list-style: none
+}
+.img-responsive{
+	max-width: 100%;
+}
+.logo-img{
+	max-width: 150px;
+}
+.login-sign-up .user-icon img{
+	width:24px;
+}
+.header a{
+	font-weight: 500;
+	font-size: 14px;
+}
+.header a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+.main-banner-section{
+	height: 100vh;
+	overflow: hidden;
+	background-image: url(../images/home-page-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.banner-text-wrap{
+	z-index: 9;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.banner-text{
+	font-size:21px;
+}
+.font-md{
+	font-family: 'ITC Avant Garde Gothic Std';
+}
+.normal-font{
+	font-family: 'ITC Avant Garde Gothic Std Book';
+}
+.heading-1{
+	font-weight: normal;
+	border-bottom:1px solid #ccc;
+	font-size: 24px;
+}
+.heading-2{
+	font-weight: normal;
+	font-size: 18px;
+}
+.clasiq-black-btn{
+	font-size: 12px;
+}
+.fetured-cars{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.fetured-cars .fetured-car{
+	width:32%;
+	margin-bottom: 2%;
+	position: relative;
+}
+.fetured-car-details{
+	bottom:0;
+	left:0;
+	right:0;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8) 60%);
+	font-size: 14px;
+}
+.trust-feature{
+	max-width: 800px;
+	margin:auto;
+	flex-wrap: wrap;
+}
+.trust-feature-img{
+	width:40%;
+}
+.trust-feature-img img{
+	max-width: 200px;
+}
+.trust-feature-details{
+	width:60%;
+}
+.trust-feature-details p{
+	font-size: 20px;
+	color:#565656;
+}
+.trust-feature-details a:hover{
+	text-decoration: none;
+	color:#565656;
+}
+.clasiq-intel{
+	background-image: url(../images/clasiq-intel-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.clasiq-intel-box{
+	background-color: rgba(255,255,255,0.8);
+	max-width:600px;
+}
+.clasiq-intel-box p{
+	font-size: 18px;
+}
+.clasiq-content{
+	background-color: #f1f1f1;
+}
+.clasiq-content-img{
+	width:55%;
+}
+.clasiq-content-detail{
+	background-color: rgba(255,255,255,0.8);
+}
+.clasiq-content-detail p{
+	font-size: 18px;
+}
+.clasiq-content-detail .btn,.clasiq-content-detail .dropdown-item{
+	font-size: 14px;
+	border-radius:0;
+}
+.clasiq-content-detail .btn:hover{
+	color: #fff;
+}
+.clasiq-content-detail .btn:focus{
+	box-shadow: none;
+}
+.footer{
+	background-color: #d7d7d7;
+}
+.footer-item{
+	font-size: 12px;
+	text-decoration: underline;
+}
+.footer .logo img{
+	max-width: 150px;
+	filter: brightness(0%);
+}
+.footer .contact-us{
+	font-size: 13px;
+}
+
+
+
+/*Responsive design*/
+@media(max-width: 991px){
+	.logo-img{
+		max-width: 100px;
+	}
+	.header a{
+		font-size: 10px;
+	}
+	.fetured-cars .fetured-car{
+		width:49%;
+	}
+	.trust-feature-img img{
+		max-width: 140px;
+	}
+	.footer-wrap{
+		justify-content: center !important;
+	}
+	.footer-wrap > div{
+		margin-bottom: 10px;
+	}
+}
+@media(max-width: 767px){
+	body{
+		overflow-x: hidden;
+	}
+	.menu-toggle{
+		display: block;
+		cursor: pointer;
+	}
+	.menu-toggle i{
+		font-size: 24px;
+	}
+	.menu-bar{
+		position: fixed;
+		top:0;
+		left:-100%;
+		width:100%;
+		height:100vh;
+		background-color: #000;
+		padding-top:80px;
+		z-index: 9; 
+		transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+	}
+	.menu-bar.open-menu{
+		left:0;
+	}
+	.menu-toggle,.logo,.login-sign-up{
+		position: relative;
+		z-index: 999;
+	}
+	.login-sign-up .login-sign-up-text{
+		display: none;
+	}
+	.banner-text-wrap{
+		top:35%;
+	}
+	.menu-bar .menu-wrap{
+		flex-wrap: wrap;
+	} 
+	.menu-bar .menu-wrap li{
+		width:100%;
+		text-align: center;
+		border-top:1px solid #333;
+	}
+	.menu-bar .menu-wrap li:last-child{
+		border-bottom: 1px solid #333;
+	}
+	.menu-bar .menu-wrap li a{
+		font-size: 18px;
+	}
+	.clasiq-content-box {
+		flex-wrap: wrap;
+	}
+	.clasiq-content-img{
+		width:100%;
+		margin-bottom:15px;
+		order:1;
+	}
+	.clasiq-content-details-wrap{
+		margin-left:0 !important;
+		margin-right: 0 !important;
+		order:2;
+	}
+	.clasiq-intel{
+		background-position: right;
+	}
+	.clasiq-intel-box{
+		margin-top:300px;
+	}
+	.footer-menu-wrap {
+		flex-wrap: wrap;
+	}
+	.footer-menu-wrap li{
+		width:100%;
+		text-align: center;
+	}
+	.footer-menu-wrap li a{
+		font-size: 14px;
+	}
+	.fetured-cars .fetured-car{
+		width:100%;
+	}
+	.fetured-cars .fetured-car{
+		margin-bottom: 10px;
+	}
+	.trust-feature-img img{
+		max-width: 100px;
+	}
+	.trust-feature-details p{
+		font-size: 16px;
+	}
+	.overflow-hide{
+		overflow: hidden;
+	}
+	.banner-text{
+		font-size:14px; 
+	}
+	.clasiq-intel-box h2{
+		font-size: 22px;
+	}
+	.fetured-cars{
+		margin-bottom:70px !important;
+	}
+	.fetured-cars .slick-dots li button{
+		background-color: #ccc;
+		border-radius: 50%;
+		width:14px;
+		height:14px;
+		color:transparent;
+	}
+	.fetured-cars .slick-dots li button:before{display:none;}
+	.fetured-cars .slick-prev, .fetured-cars .slick-next{
+		top:auto;
+		bottom:-30px;
+		border-left:3px solid #ccc;
+		border-bottom:3px solid #ccc;
+		z-index: 9;
+	}
+	.fetured-cars .slick-prev{
+		left:0;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+	}
+	.fetured-cars .slick-next{
+		right:0;
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		-moz-transform: rotate(-135deg);
+		-ms-transform: rotate(-135deg);
+		-o-transform: rotate(-135deg);
+	}
+	.fetured-cars .slick-prev:before,.fetured-cars .slick-next:before{
+		display: none;
+	}
+	.fetured-cars .slick-dots{
+		bottom:-33px;
+	}
+}
