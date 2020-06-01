@@ -3,14 +3,18 @@ body{
 	background-color: #fff;
 }
 .header-wrap{
-	background-image: linear-gradient(rgba(0,0,0,0.8) 30%,rgba(0,0,0,0));
 	position: absolute;
 	top:0;
 	left:0;
 	right:0;
 	width:100%;
-	padding-bottom:8rem;
 	z-index: 999;
+	background-color: #000;
+}
+.header-wrap.have-banner{
+	background-image: linear-gradient(rgba(0,0,0,0.8) 30%,rgba(0,0,0,0));
+	padding-bottom:8rem;
+	background-color: transparent;
 }
 .menu-toggle{
 	display: none;
@@ -48,10 +52,32 @@ body{
 .header a{
 	font-weight: 500;
 	font-size: 14px;
+	padding:10px;
 }
 .header a:hover{
 	color:#fff;
 	text-decoration: none;
+}
+.menu-item{
+	position: relative;
+	overflow: hidden;
+}
+.menu-item:after{
+	content: '';
+	position: absolute;
+	width:100%;
+	height:2px;
+	background-color: #f0a331;
+	bottom: 0px;
+	left:-100%;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+.menu-item:hover:after{
+	left:0;
 }
 .main-banner-section{
 	height: 100vh;
@@ -82,7 +108,6 @@ body{
 }
 .heading-1{
 	font-weight: normal;
-	border-bottom:1px solid #ccc;
 	font-size: 24px;
 }
 .heading-2{
@@ -92,17 +117,17 @@ body{
 .clasiq-black-btn{
 	font-size: 12px;
 }
-.fetured-cars{
+.car-list-wrap{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.fetured-cars .fetured-car{
+.car-list-wrap .car-box{
 	width:32%;
 	margin-bottom: 2%;
 	position: relative;
 }
-.fetured-car-details{
+.car-details{
 	bottom:0;
 	left:0;
 	right:0;
@@ -191,7 +216,7 @@ body{
 	.header a{
 		font-size: 10px;
 	}
-	.fetured-cars .fetured-car{
+	.car-list-wrap .car-box{
 		width:49%;
 	}
 	.trust-feature-img img{
@@ -256,6 +281,7 @@ body{
 	}
 	.menu-bar .menu-wrap li a{
 		font-size: 18px;
+		vertical-align: top;
 	}
 	.clasiq-content-box {
 		flex-wrap: wrap;
@@ -286,10 +312,8 @@ body{
 	.footer-menu-wrap li a{
 		font-size: 14px;
 	}
-	.fetured-cars .fetured-car{
+	.car-list-wrap .car-box{
 		width:100%;
-	}
-	.fetured-cars .fetured-car{
 		margin-bottom: 10px;
 	}
 	.trust-feature-img img{
